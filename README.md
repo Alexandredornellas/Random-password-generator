@@ -6,9 +6,13 @@
 
 ### Create a page with vanilla JS that generate random passwords
 
-✔️ 4 random passwords per turn
+✔️ 4 random passwords per turn;
 
-✔️ action buttons
+✔️ action button;
+
+✔️ up to 52 different characters, includind special characteres;
+
+✔️ Change password length;
 
 ## 🛠 Tecnology:
 
