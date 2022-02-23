@@ -2,7 +2,7 @@
 
 html, body {
     margin: 0;
-    padding: 5% 20% 5% 20%;
+    padding: 0 20%;
     background-color: #1C1C1C;
     font-size: 16px;
 }
@@ -10,6 +10,7 @@ html, body {
 main {
     background-color: #1F2937;
     color: white;
+    margin-top: 5%;
     padding: 118px 52px 0 52px;
 }
 

@@ -5,6 +5,7 @@ let getPass3Wrapper = document.getElementById("pass3");
 let getPass4Wrapper = document.getElementById("pass4");
 let allPass = [getPass1Wrapper, getPass2Wrapper, getPass3Wrapper, getPass4Wrapper]
 let inputValue = document.getElementById("input-el");
+let getInputCharDiv = document.getElementById("inputChar-div")
 
 //random char variables
 let characteres = "1 2 3 4 5 6 7 8 9 ! @ # $ % & * ( ) + - = a b c d e f g h i j k l m n o p q r s t u v w x y z";
@@ -18,7 +19,12 @@ function generate(){
         }else{
         passLength = 15;
     }
-    allPass.forEach(randomPassw);
+
+    if(inputValue.value > 20){
+        error();
+    }else{
+        allPass.forEach(randomPassw);
+    }
 }
 
 function randomPassw(item){
@@ -31,6 +37,12 @@ function randomPassw(item){
     }
 
     let fullPass = randomString.join('');
-    item.textContent = fullPass;
-    
+    item.textContent = fullPass;   
+}
+
+function error(){
+    let createErrorMsg = document.createElement("p");
+    createErrorMsg.textContent = "Please, insert numbers below 20!";
+    createErrorMsg.style.color = "red";
+    getInputCharDiv.appendChild(createErrorMsg);
 }
