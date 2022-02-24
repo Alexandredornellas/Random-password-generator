@@ -1,4 +1,4 @@
-# Need a new password? you've to the right place!
+# Need a new password? you've come to the right place!
 #### Click in the link below to open the page.
 - [here!](https://alexandredornellas.github.io/random-password-generator/)
 

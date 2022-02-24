@@ -13,6 +13,8 @@ let passLength = 0;
 let randomString = [];
 let charArr = characteres.split(" ");
 
+// another
+
 function generate(){
     if(inputValue.value !== ""){
         passLength = inputValue.value;
@@ -37,12 +39,14 @@ function randomPassw(item){
     }
 
     let fullPass = randomString.join('');
-    item.textContent = fullPass;   
+    item.textContent = fullPass; 
 }
 
 function error(){
     let createErrorMsg = document.createElement("p");
     createErrorMsg.textContent = "Please, insert numbers below 20!";
     createErrorMsg.style.color = "red";
-    getInputCharDiv.appendChild(createErrorMsg);
+    createErrorMsg.id ="errorMessage-el"
+    let errorMsg = createErrorMsg
+    getInputCharDiv.appendChild(errorMsg);
 }
